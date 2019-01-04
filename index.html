@@ -1,62 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+<title>FreezeControl</title>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='purecss.css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
+body {margin:0;display:block;font-weight: 700;font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em; }
+
+/* menubar */
+.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0; z-index:100;}
+.menu{height:22px;width:50px;}
+.linebar {border-radius: 2px;height:4px;width:40px;background-color:#ee6e12;}
+.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(3) {transition: .5s;}
+.menuon{height:30px;width:40px;}
+.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
+.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
+.menuon>.linebar:nth-child(2) {opacity: 0;}
+.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
+
+
+
+.header {background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/bgimg.jpg"); min-height:calc(100vh); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.titlehead {display:block; height:100px; width:100%; overflow:hidden;}
+.company {width:500px; float:left; margin-top:20px;}
+.logo {height:80px; float:left;}
+.companyname {text-transform:uppercase; color:white; padding:15px 10px 5px 5px;  font-family:Montserrat,sans-serif; font-size:26px;}
+.companyservice {color:white;}
+
+.nav {list-style-type:none; width:650px; float:right; margin:50px 0;}
+.nav>li {float:left;}
+.nav>li>a {color:rgba(255,255,255,.75); padding:14px 16px; font-size:14px; text-transform:uppercase; text-decoration:none; -webkit-transition: all .3s; transition: all .3s;}
+.nav>li>a:hover {color:rgba(255,255,255,1);}
+@media only screen and (max-width:768px) {
+.nav {margin:55px 0;}
+.nav>li {float:none;}
 }
 
-.bgimg {
-  background-image: url('img.jpeg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+
+#toggle {width:50px; height:45px; margin-top:3px; overflow:hidden;}
+.a {display:none;}
+.b {display:block;}
+.arrowimg1 {margin-top:-62px;margin-left:5px;}
+.arrowimg2 {margin-top:14px;margin-left:5px;}
+
+@media only screen and (max-width:768px) {
+.hide {display:none; position:none;}
+.show {display:block; position:absolute;}
 }
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+.ablock1 {height:300px; max-width:500px; overflow:hidden; display:block; margin:auto; margin-top:100px;}
+.ablock1 img { width:100%;}
+.ablock1>p {color:white; text-align:center; font-family:sofia; font-size:30px;}
+.ablock1>i {width:100%; margin-top:-40px; display:block;}
+.ablock1 .fa-star {color:white; text-align:center; font-size:30px;}
+.twoborder {border-width:5px 0 5px 0; border-style:solid; border-color:white; width:80%; margin:auto; margin-top:20px; font-size:25px;}
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+.block2 h2, .block2 h3, .block2 p {text-align:center; font-family: Montserrat,sans-serif; font-weight: 500; line-height: 1.2; color: #212121;}
+.block2 h2 {font-size: 1.99995214em; letter-spacing: -.04em; text-transform:uppercase;}
+.block2 h3 {margin-top:50px; font-size: 1.1892em;color: #444; text-transform:uppercase;}
+.block2 p { width:80%; margin:auto;font-size: 1.1892em;color: #444; }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+.block3 {}
+.block3>col-sm-3 {}
+.block3 img {margin:auto; display:block;}
+.block3 p {text-align:center;}
 
-hr {
-  margin: auto;
-  width: 40%;
-}
+.bottom {background-color:#1d1d1d; color:white; min-height:300px;}
+
+
+
 </style>
+</head>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Logo</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>10 days left</p>
-  </div>
-  <div class="bottomleft">
-    <p>Some text</p>
-  </div>
+<div class='header'>
+
+<div class="titlehead">
+<div class='filter'></div>
+
+<div class='company'>
+<img class='logo' src='img/logo1.png'>
+<div class='companyname'>FreezeControl</div>
+<div class='companyservice'>Repair & Services</div>
 </div>
+
+<div class='menuholder xs-visible'>
+<div class='menu' id='menubars'>
+<div class='linebar'></div>
+<div class='linebar'></div>
+<div class='linebar'></div>
+</div>
+</div>
+
+
+<ul id="menutoggle" class="nav hide">
+
+<li>
+<a id='index' href='index.html'>Home</a>
+</li>
+
+<li>
+<a  id='about' href='about.html'>About-us</a>
+</li>
+
+<li class='dropdown'>
+<div id='toggle' class='xs-visible' style='float:right;'><img id='arrowtoggle' class='arrowimg1' src='img/arrow.png'></div>
+<a id='service' href='services.html'>Services</a>
+<div id='togglee' class='a dropdown-content'>
+<a href='s1.html'>Service one</a>
+<a href='s2.html'>Service two</a>
+<a href='s3.html'>Service three</a>
+<a href='s4.html'>Service Four</a>
+<a href='#'></a>
+</div>
+</li>
+
+<li>
+<a id='gallery' href='gallery.html'>Gallery</a>
+</li>
+
+<li>
+<a id='testimonial' href='testimonial.html'>Testimonials</a>
+</li>
+
+<li>
+<a id='contact' href='contact.html'>Contact</a>
+</li>
+
+</ul>
+</div>
+
+<div class="ablock1">
+
+<img src="img/titled2.png">
+<i class="fas fa-star"></i>
+<p class="twoborder">Repair and services</p>
+<p>Refrigeration & Air Conditioning</p>
+
+
+</div>
+
+
+</div>
+
+<div class="block2">
+
+<h3>We Amaze Your Customers</h3>
+<h2>FreezeControl Refrigeration and Air Conditioning</h2>
+<p>FreezeControl Refrigeration and Air Conditioning offers fast, reliable, and efficient service of appliance installation, repairs, and maintenance, on site and at your home, from highly qualified technicians. We provide repair and installation services for AC, Refrigerator, Dependable Refrigerator and AC repair services in Bangalore. Our technicians provide quaranteed and quality workmanship, at a very reasonable rates.</p>
+</div>
+
+<div class="container block3">
+<div class="col-sm-3">
+<img src="img/pic1.jpg">
+<p>AC INSTALLATION</p>
+</div>
+<div class="col-sm-3">
+<img src="img/pic2.jpg">
+<p>AC MAINTENANCE</p>
+</div>
+<div class="col-sm-3">
+<img src="img/pic3.jpg">
+<p>AC SERVICING</p>
+</div>
+<div class="col-sm-3">
+<img src="img/pic4.jpg">
+<p>AC RENT</p>
+</div>
+</div>
+
+<div class="bottom container">
+<div class="col-sm-6">
+<h2>CONTACT US</h2>
+<p>#2, 15th cross, Lakshmipuram, C.M.H. Road, Ulsoor, Bangalore - 560 008</p>
+<p>E-Mail : freezecontrol123@gmail.com</p>
+<p>Munawar</p>
+<p>Tel : 080 25306882</p>
+<p>Mob : 98452 03882</p>
+<p>Mob : 98443 53711</p>
+<p></p>
+</div>
+<div class="col-sm-3">
+<h2>MAP</h2>
+</div>
+<div class="col-sm-3">
+<h2>SOCIAL</h2>
+</div>
+</div>
+
+
+
+<script>
+
+
+$(document).ready(function(){
+
+	$("#toggle").click(function(){
+		$("#togglee").toggleClass("a b");
+	});
+	
+	$("#toggle").click(function(){
+		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menutoggle").toggleClass("hide show");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menubars").toggleClass("menu menuon");
+	});
+	
+
+});
+</script>
+
+
 
 </body>
 </html>

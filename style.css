@@ -1,0 +1,110 @@
+body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Raleway,sans-serif; letter-spacing: .05em; }
+
+/* header */
+.header {background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/banner3.png"); min-height:calc(100vh); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.titlehead {display:block; min-height:100px; width:100%; overflow:hidden; background-color:#1d1d1d;}
+
+/* company logo */
+.company {width:48%; float:left; margin-top:20px;}
+.logo {height:80px; float:left;}
+.companyname {text-transform:uppercase; color:#418ec7; padding:10px 10px 1px 5px;  font-family:; font-size:26px;}
+.companyservice {color:white;font-family: sofia;}
+
+/* menu */
+.nav {list-style-type:none; width:520px; float:right; margin:50px 0; }
+.nav>li {float:left;}
+.nav>li>a {color:rgba(255,255,255,.75); padding:14px 16px; font-size:14px; text-transform:uppercase; text-decoration:none; -webkit-transition: all .3s; transition: all .3s;}
+.nav>li>a:hover {color:rgba(255,255,255,1);}
+
+/* sub menu */
+.dropdown-content {display:none; position:absolute; width:170px; top:75px;z-index:3; background-color:black;}
+.dropdown-content>a { text-decoration:none; color:rgba(255,255,255,.75); padding:10px 5px; display:block;}
+.dropdown-content>a:hover {color:rgba(255,255,255,1);}
+
+/* on pc */
+@media only screen and (min-width:768px) {
+.dropdown:hover .dropdown-content {display:block;} 
+}
+
+/* on tablet */
+@media only screen and (max-width:1080px) {
+.nav {width:520px; padding-top:20px; margin:auto; display:block; float:none; overflow:hidden;}
+.company {width:100%; height:80px;}
+}
+
+/* on mobile */
+@media only screen and (max-width:768px) {
+.company {background-color:black; margin-top:0px; height:80px; overflow:hidden;opacity: 0.5;}
+
+.nav {padding-top:0px; padding-left:0px; background-color:black; width:100%;}
+.nav>li {float:none; margin:20px;}
+.nav>ul>li {float:none;}
+.dropdown-content {margin-left:50px; position:initial;}
+}
+
+/* menubar */
+.menuholder {width:100%; height:40px; background-color:black; overflow:hidden;opacity: 0.5;}
+.menu, .menuon{height:20px;width:50px; float:right; margin-top:5px;}
+.linebar {border-radius: 2px;height:4px;width:40px;background-color:#ee6e12;}
+.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(3) {transition: .5s;}
+.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
+.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
+.menuon>.linebar:nth-child(2) {opacity: 0;}
+.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
+
+#toggle {width:50px; height:45px; margin-top:-15px; overflow:hidden;}
+.a {display:none;}
+.b {display:block;}
+.arrowimg1 {margin-top:-62px;margin-left:5px;}
+.arrowimg2 {margin-top:14px;margin-left:5px;}
+
+@media only screen and (max-width:768px) {
+.hide {display:none; position:none;}
+.show {display:block; position:absolute;}
+}
+
+
+
+.contactblock {background-color:#1e90c8; color:white;min-height:150px; width:100%; box-sizing:border-box; border:50px solid #1e90c8;}
+.contactblock>p {display: inline-block; font-family: 'Open Sans', sans-serif; margin: 0 auto; font-size: 18px; font-weight: normal; color: #fff; text-align: center; width:80%; }
+.contactblock>a {display: block; background: #fff; font-family: 'Oswald-Regular'; margin: 0 auto;font-size: 18px; font-weight: normal; color: #0fbbef;text-align: center; float: right; border: 1px solid #ccc; border-radius: 10px; text-transform: uppercase;}
+.contactblock>a:hover {-webkit-transition: all 0.5s ease; background: #024f9f; color: #fff;}
+
+
+
+.fixedenquiry {position:fixed; left:-55px; top:50%; height:40px; width:120px; background-color:blue; color:white; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); text-align:center; border-radius:10px; padding-top:5px; z-index:50;}
+.bottom {background-color:#1d1d1d; color:white; min-height:300px; margin-top:50px; box-sizing:border-box; border-style:solid; border-width:10px 50px; border-color:#1d1d1d; overflow:hidden;}
+.bottom .social { letter-spacing:5px; font-size:20px;}
+.bottom iframe {height:200px; width:100%;}
+.companyinfo {background-color:black; width:100%; color:#8c7171; display:block; margin:0; padding:0;}
+.companyinfo p {margin:0; padding:0;}
+
+.block6 {}
+.block6>.container {width:80%; margin:auto; overflow:hidden;}
+.block6 p {font-size: 18px; font-weight: bold; color: #125687;}
+.slidecontain {width:80%; height:113px; display:block; overflow:hidden; margin:auto;}
+.slide { height:110px; width:calc(278px * 13);}
+.slide>img { float:left; border:2px solid #ccc; margin:0px 10px; background: #f6f6f6; display:block; width:254px;}
+.leftslide {animation-name:slider; animation-duration:30s; float:left;animation-iteration-count: infinite;animation-timing-function: linear;}
+@keyframes slider {
+from {margin-left:0px;}
+to {margin-left:calc(278px * -13);}
+}
+.slide:hover {animation-play-state: paused;}
+
+
+.eform {width:90%; max-width:500px; overflow:hidden; position:fixed; z-index:100;box-sizing: border-box; top:20px; left:calc(50% - 250px);display: none;}
+.econtainer input[type=text], .econtainer  select, .econtainer  textarea {width: 100%;padding: 4px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 2px; margin-bottom: 8px; resize: vertical;}
+.econtainer input[type=submit] { background-color: #4CAF50;color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;  float:right;}
+.econtainer input[type=submit]:hover { background-color: #45a049;}
+.econtainer { border-radius: 5px; background-color: #f2f2f2; padding: 20px;}
+.econtainer button {background-color: #4CAF50;color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;}
+.econtainer button:hover {background-color: #45a049;}
+.formenquiry {width:200px; margin:auto;display:block;}
+/* on mobile */
+@media only screen and (max-width:768px) {
+.eform {left:5%;}
+}

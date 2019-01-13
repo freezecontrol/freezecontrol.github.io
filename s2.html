@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<div id="head"></div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
+<style>
+.header {background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/services.jpg"); min-height:calc(60vh); background-attachment: fixed; background-position: top ; background-repeat:repeat; background-size:100% 60%; overflow:hidden;}
+.col-sm-3 {overflow:hidden;}
+
+.collapsible {background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px;}
+.active, .collapsible:hover { background-color: #555;}
+.collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px;}
+.active:after { content: "\2212";}
+.content {  padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; background-color: #f1f1f1;}
+
+.acimg {width:100%; border-radius:20px;}
+
+</style>
+</head>
+<body>
+
+<div class='header'>
+<div id="titlehead" class="titlehead"></div>
+</div>
+
+<div id="myForm" class="eform"></div>
+<div onclick="openForm()" class="fixedenquiry">Book Service</div>
+
+
+<div class="container">
+<h2 style="text-align:center; font-size:30px;">Washing Machine Service<span style="color: #1cb8f1;">  in Bangalore</span></h2>
+<div class="col-sm-3">
+
+<h2>Location for Washing Machine Service in Bangalore</h2>
+<button class="collapsible">Bangalore Central</button>
+<div class="content">
+  <ul>
+           <li> <a> RichmondTown </a> </li>
+           <li> <a> FraserTown </a> </li>
+           <li> <a> CoxTown </a> </li>
+           <li> <a> Domlur </a> </li>
+           <li> <a> HAL </a> </li>
+           <li> <a> Indiranagar </a> </li>
+           <li> <a> Jevanbheemanagar </a> </li>
+           <li> <a> Malleshwaram </a> </li>
+           <li> <a> Chickpet </a> </li>
+           <li> <a> Rajajinagar </a> </li>
+           <li> <a> Sadashivanagar </a> </li>
+           <li> <a> Sheshadripuram </a> </li>
+           <li> <a> Shivajinagar </a> </li>
+           <li> <a> Ulsoor </a> </li>
+           <li> <a> Vasanth Nagar </a> </li>
+       </ul>
+</div>
+<button class="collapsible">Bangalore East</button>
+<div class="content">
+  <ul>
+           <li> <a> Bellandur </a> </li>
+           <li> <a> CV Raman Nagar </a> </li>
+           <li> <a> KR Puram </a> </li>
+           <li> <a> Mahadevapura </a> </li>
+           <li> <a> Marathahalli </a> </li>
+           <li> <a> Whitefield </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore North - East</button>
+<div class="content">
+  <ul>
+           <li> <a> Banaswadi </a> </li>
+           <li> <a> HBR Layout </a> </li>
+           <li> <a> Horamavu </a> </li>
+           <li> <a> Kammanahalli </a> </li>
+           <li> <a> Lingarajapuram </a> </li>
+           <li> <a> Ramamurthy Nagar </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore North</button>
+<div class="content">
+  <ul>
+           <li> <a> Hebbal </a> </li>
+           <li> <a> Jalahalli </a> </li>
+           <li> <a> Mathikere </a> </li>
+           <li> <a> Peenya </a> </li>
+           <li> <a> RT Nagar </a> </li>
+           <li> <a> Vidyaranyapura </a> </li>
+           <li> <a> Yelahanka </a> </li>
+           <li> <a> Yeshwantpur </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore South East</button>
+<div class="content">
+  <ul>
+           <li> <a> Bommanahalli </a> </li>
+           <li> <a> Bommasandra </a> </li>
+           <li> <a> BTM Layout </a> </li>
+           <li> <a> Electronic City </a> </li>
+           <li> <a> HSR Layout </a> </li>
+           <li> <a> Koramangala </a> </li>
+           <li> <a> Madiwala </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore South</button>
+<div class="content">
+  <ul>
+           <li> <a> Banashankari </a> </li>
+           <li> <a> Basavanagudi </a> </li>
+           <li> <a> JP Nagar </a> </li>
+           <li> <a> Girinagar </a> </li>
+           <li> <a> Jayanagar </a> </li>
+           <li> <a> Kumaraswamy Layout </a> </li>
+           <li> <a> Padmanabhanagar </a> </li>
+           <li> <a> Uttarahalli </a> </li>
+           <li> <a> Arekere </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore West</button>
+<div class="content">
+  <ul>
+           <li> <a> Kengeri </a> </li>
+           <li> <a> Nagarabhavi </a> </li>
+           <li> <a> Basaveshwaranagar </a> </li>
+           <li> <a> Nandini Layout </a> </li>
+           <li> <a> Rajarajeshwari Nagar </a> </li>
+           <li> <a> Vijaynagar </a> </li>
+           <li> <a> Nayandahalli </a> </li>
+       </ul> 
+</div>
+
+
+
+
+</div>
+<div class="col-sm-6">
+<p>We are one of the leading washing machine repair service in Bangalore. We repair and service all types of front and top load washing machines. Our major washing machine brands includes : LG, Bosch, Intex, Siemens, IFB, Samsung, Mitashi, Videocon, BPL, GEM, Onida, Whirlpool, Godrej, Haier, Panasonic, Electrolux, Hyundai, Sansui etc.</p>
+<ul>
+<li>On-time disciplined appliance technician at your convenient schedule.</li>
+<li>Hassle free online/phone call booking.</li>
+<li>2 months service warranty after washing machine repair.</li>
+</ul>
+</div>
+<div class="col-sm-3">
+
+<img class="acimg" src="img/washing-machine-repair-service-bangalore.jpg" alt="img">
+</div>
+
+</div>
+
+
+
+
+<div id="block4" class="contactblock"></div>
+
+<div id="logo" class="block6"></div>
+
+
+<div id="bottom" class="container"></div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script src='myscripts.js'></script>
+
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
+
+</body>
+</html>

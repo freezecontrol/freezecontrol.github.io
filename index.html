@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<div id="head"></div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
+<style>
+
+.ablock1 {height:300px; max-width:500px; overflow:hidden; display:block; margin:auto; margin-top:100px;}
+.ablock1 img { width:100%;}
+.ablock1>p {color:white; text-align:center; font-family:sofia; font-size:30px;}
+.ablock1>i {width:100%; margin-top:-40px; display:block;}
+.ablock1 .fa-star {color:white; text-align:center; font-size:30px;}
+.twoborder {border-width:5px 0 5px 0; border-style:solid; border-color:white; width:80%; margin:auto; margin-top:20px; font-size:25px; text-shadow:0px 0px 2px yellow;}
+
+.block2 h2, .block2 h3, .block2 p {text-align:center; font-family: 'Oswald-Regular'; font-weight: 500; line-height: 1.2; color: #212121;}
+.block2 h2 {font-size: 1.99995214em; letter-spacing: -.04em; text-transform:uppercase; color: #024f9f;}
+.block2 h3 {margin-top:50px; font-size: 16px; color: #666a6d; text-transform:uppercase; }
+.block2 p { width:80%; margin:auto; font-size: 15px; color: #444; color: #5a5353; font-family: 'Open Sans', sans-serif;}
+
+.block3 {margin-top:50px; width:90%; margin:auto;}
+.block3>col-sm-3 {}
+.block3 img {margin:auto; display:block;}
+.fill:hover, .fill:focus { box-shadow: inset 0 0 0 2em var(--hover);}
+.fill { --color: #a972cb; --hover: #cb72aa;}
+.fill {  color: var(--color); transition: 0.25s; width:270px; margin:auto; display:block; background: none; border:0px solid; font: inherit; line-height: 1; padding: 1em 2em;}
+.fill:hover, .fill:focus { border-color: var(--hover); color: #fff;}
+
+.block4 {color:white; box-sizing:border-box; border-style:solid; border-color:#2668ad; border-width:10px 100px; font-size: 17px; color: #fff; font-family: 'Oswald-Regular';     background:#2668ad; text-align:center;}
+.block4>p { text-align:center; font-size: 30px; color: #fff; font-family: 'Oswald-Regular'; line-height: 1.42857143;}
+.block4 span {font-size:50px;}
+
+.block5 {width:100%; overflow:hidden; display:block; box-sizing:border-box; border-bottom:1px solid #2668ad;}
+.block5>.container { min-height:50px; width:80%; margin:auto; margin-top:40px;  margin-bottom:40px;}
+.block5 p {float:left; font-size: 34px; color: #525252;  font-family: 'Oswald-Regular'; margin:5px;}
+.block5 cite {border-left: 13px solid #0fbbef; margin-right: 15px;box-sizing: border-box; float:left; height:40px; margin-top:5px;}
+.block5 span {color: #0fbbef}
+.block5 .fab { background-color:black; color:white; height:50px; width:50px; font-size:30px; text-align:center; line-height:50px; border-radius:50px;}
+.block5 .social {float:right; display:block;}
+@media only screen and (max-width:768px) {
+.block5 .social {float:none; text-align:center;}
+}
+
+
+main { overflow:hidden; width:80%; height:460px; position:relative; margin:auto;}
+#carousel {  position: relative; height: 400px; top: 45%; transform: translateY(-50%); overflow: hidden;}
+#carousel div { position: absolute; transition: transform 1s, left 1s, opacity 1s, z-index 0s; opacity: 1;}
+#carousel div img { width: 400px; transition: width 1s;}
+#carousel div.hideLeft { left: 0%; opacity: 0; transform: translateY(50%) translateX(-50%);}
+#carousel div.hideLeft img { width: 200px;}
+#carousel div.hideRight { left: 100%; opacity: 0; transform: translateY(50%) translateX(-50%);}
+#carousel div.hideRight img { width: 200px;}
+#carousel div.prev { z-index: 5; left: 30%; transform: translateY(50px) translateX(-50%);}
+#carousel div.prev img { width: 300px;}
+#carousel div.prevLeftSecond { z-index: 4; left: 15%; transform: translateY(50%) translateX(-50%); opacity: 0.7;}
+#carousel div.prevLeftSecond img { width: 200px;}
+#carousel div.selected { z-index: 10; left: 50%; transform: translateY(0px) translateX(-50%);}
+#carousel div.next { z-index: 5; left: 70%;  transform: translateY(50px) translateX(-50%);}
+#carousel div.next img { width: 300px;}
+#carousel div.nextRightSecond { z-index: 4;  left: 85%; transform: translateY(50%) translateX(-50%); opacity: 0.7;}
+#carousel div.nextRightSecond img { width: 200px;}
+.buttons { position: absolute; left: 50%; transform: translateX(-50%); bottom: 0px; width:200px; height:50px;}
+.buttons>button { display:block; width:100px; border:1px solid pink; float:left;font: inherit; line-height: 1; padding: 1em 2em;background: none;margin: auto;transition: 0.25s;}
+.buttons>button:hover, button:focus { border-color: var(--hover); color: #fff; background-color:#2668ad;}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class='header'>
+
+<div id="titlehead" class="titlehead"></div>
+
+<div class="ablock1">
+<img src="img/titled2.png">
+<i class="fas fa-star"></i>
+<p class="twoborder">Repair and services</p>
+<p>Refrigeration & Air Conditioning</p>
+</div>
+
+</div>
+
+<div id="myForm" class="eform"></div>
+<div onclick="openForm()" class="fixedenquiry">Book Service</div>
+
+<div class="block2">
+
+<h3>We Amaze Your Customers</h3>
+<h2>FreezeControl Refrigeration <span style="color: #1cb8f1;">and Air Conditioning</span></h2>
+<p>FreezeControl Refrigeration and Air Conditioning offers fast, reliable, and efficient service of appliance installation, repairs, and maintenance, on site and at your home, from highly qualified technicians. We provide repair and installation services for AC, Refrigerator, Dependable Refrigerator and AC repair services in Bangalore. Our technicians provide quaranteed and quality workmanship, at a very reasonable rates.</p>
+</div>
+
+<div class="container block3">
+<div class="col-sm-4">
+<img src="img/pic1.jpg">
+<button class="fill">AC INSTALLATION AND SERVICE</button>
+</div>
+<div class="col-sm-4">
+<img src="img/pic2.jpg">
+<button class="fill">WASHING MACHINCE SERVICE</button>
+</div>
+<div class="col-sm-4">
+<img src="img/pic3.jpg">
+<button class="fill">REFRIGERATOR SERVICE</button>
+</div>
+</div>
+
+<div class="container block4">
+<p>OUR SERVICES</p>
+<div class="col-sm-4"><span>1</span>
+AC INSTALLATION AND SERVICE
+</div>
+<div class="col-sm-4"><span>2</span>
+WASHING MACHINCE SERVICE
+</div>
+<div class="col-sm-4"><span>3</span>
+REFRIGERATOR SERVICE
+</div>
+</div>
+
+<div class="block5">
+<div class="container">
+<cite></cite><p>What we have done - <span>Our Works</span></p>
+<div class="social">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-google-plus-g"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+</div>
+</div>
+<main>
+
+    <div id="carousel">
+
+       <div class="hideLeft">
+        <img src="img/1.jpeg">
+      </div>
+
+      <div class="prevLeftSecond">
+        <img src="img/2.jpeg">
+      </div>
+
+      <div class="prev">
+        <img src="img/3.jpeg">
+      </div>
+
+      <div class="selected">
+        <img src="img/4.jpeg">
+      </div>
+
+      <div class="next">
+        <img src="img/5.jpeg">
+      </div>
+
+      <div class="nextRightSecond">
+        <img src="img/6.jpeg">
+      </div>
+
+      <div class="hideRight">
+        <img src="img/7.jpeg">
+      </div>
+
+      <div class="hideRight">
+        <img src="img/8.jpeg">
+      </div>
+
+      <div class="hideRight">
+        <img src="img/9.jpeg">
+      </div>
+
+      <div class="hideRight">
+        <img src="img/10.jpeg">
+      </div>
+
+      <div class="hideRight">
+        <img src="img/11.jpeg">
+      </div>
+
+    </div>
+
+    <div class="buttons">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+
+  </main>
+</div>
+
+<div id="block4" class="contactblock"></div>
+
+<div id="logo" class="block6"></div>
+
+
+<div id="bottom" class="container"></div>
+
+
+<script src='myscripts.js'></script>
+
+<script>
+function moveToSelected(element) {
+
+  if (element == "next") {
+    var selected = $(".selected").next();
+  } else if (element == "prev") {
+    var selected = $(".selected").prev();
+  } else {
+    var selected = element;
+  }
+
+  var next = $(selected).next();
+  var prev = $(selected).prev();
+  var prevSecond = $(prev).prev();
+  var nextSecond = $(next).next();
+
+  $(selected).removeClass().addClass("selected");
+
+  $(prev).removeClass().addClass("prev");
+  $(next).removeClass().addClass("next");
+
+  $(nextSecond).removeClass().addClass("nextRightSecond");
+  $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+  $(nextSecond).nextAll().removeClass().addClass('hideRight');
+  $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        moveToSelected('prev');
+        break;
+
+        case 39: // right
+        moveToSelected('next');
+        break;
+
+        default: return;
+    }
+    e.preventDefault();
+});
+
+$('#carousel div').click(function() {
+  moveToSelected($(this));
+});
+
+$('#prev').click(function() {
+  moveToSelected('prev');
+});
+
+$('#next').click(function() {
+  moveToSelected('next');
+});
+</script>
+
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<div id="head"></div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
+<style>
+.header {background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/services.jpg"); min-height:calc(60vh); background-attachment: fixed; background-position: top ; background-repeat:repeat; background-size:100% 60%; overflow:hidden;}
+.col-sm-3 {overflow:hidden;}
+
+.collapsible {background-color: #777; color: white; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px;}
+.active, .collapsible:hover { background-color: #555;}
+.collapsible:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px;}
+.active:after { content: "\2212";}
+.content {  padding: 0 18px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; background-color: #f1f1f1;}
+
+.acimg {width:100%; border-radius:20px;}
+
+</style>
+</head>
+<body>
+
+<div class='header'>
+<div id="titlehead" class="titlehead"></div>
+</div>
+
+<div id="myForm" class="eform"></div>
+<div onclick="openForm()" class="fixedenquiry">Book Service</div>
+
+
+<div class="container">
+<h2 style="text-align:center; font-size:40px;">Air Conditioning Service<span style="color: #1cb8f1;">  in Bangalore</span></h2>
+<div class="col-sm-3">
+
+<h2>Location for Air Conditioning Service in Bangalore</h2>
+<button class="collapsible">Bangalore Central</button>
+<div class="content">
+  <ul>
+           <li> <a> RichmondTown </a> </li>
+           <li> <a> FraserTown </a> </li>
+           <li> <a> CoxTown </a> </li>
+           <li> <a> Domlur </a> </li>
+           <li> <a> HAL </a> </li>
+           <li> <a> Indiranagar </a> </li>
+           <li> <a> Jevanbheemanagar </a> </li>
+           <li> <a> Malleshwaram </a> </li>
+           <li> <a> Chickpet </a> </li>
+           <li> <a> Rajajinagar </a> </li>
+           <li> <a> Sadashivanagar </a> </li>
+           <li> <a> Sheshadripuram </a> </li>
+           <li> <a> Shivajinagar </a> </li>
+           <li> <a> Ulsoor </a> </li>
+           <li> <a> Vasanth Nagar </a> </li>
+       </ul>
+</div>
+<button class="collapsible">Bangalore East</button>
+<div class="content">
+  <ul>
+           <li> <a> Bellandur </a> </li>
+           <li> <a> CV Raman Nagar </a> </li>
+           <li> <a> KR Puram </a> </li>
+           <li> <a> Mahadevapura </a> </li>
+           <li> <a> Marathahalli </a> </li>
+           <li> <a> Whitefield </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore North - East</button>
+<div class="content">
+  <ul>
+           <li> <a> Banaswadi </a> </li>
+           <li> <a> HBR Layout </a> </li>
+           <li> <a> Horamavu </a> </li>
+           <li> <a> Kammanahalli </a> </li>
+           <li> <a> Lingarajapuram </a> </li>
+           <li> <a> Ramamurthy Nagar </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore North</button>
+<div class="content">
+  <ul>
+           <li> <a> Hebbal </a> </li>
+           <li> <a> Jalahalli </a> </li>
+           <li> <a> Mathikere </a> </li>
+           <li> <a> Peenya </a> </li>
+           <li> <a> RT Nagar </a> </li>
+           <li> <a> Vidyaranyapura </a> </li>
+           <li> <a> Yelahanka </a> </li>
+           <li> <a> Yeshwantpur </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore South East</button>
+<div class="content">
+  <ul>
+           <li> <a> Bommanahalli </a> </li>
+           <li> <a> Bommasandra </a> </li>
+           <li> <a> BTM Layout </a> </li>
+           <li> <a> Electronic City </a> </li>
+           <li> <a> HSR Layout </a> </li>
+           <li> <a> Koramangala </a> </li>
+           <li> <a> Madiwala </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore South</button>
+<div class="content">
+  <ul>
+           <li> <a> Banashankari </a> </li>
+           <li> <a> Basavanagudi </a> </li>
+           <li> <a> JP Nagar </a> </li>
+           <li> <a> Girinagar </a> </li>
+           <li> <a> Jayanagar </a> </li>
+           <li> <a> Kumaraswamy Layout </a> </li>
+           <li> <a> Padmanabhanagar </a> </li>
+           <li> <a> Uttarahalli </a> </li>
+           <li> <a> Arekere </a> </li>
+       </ul> 
+</div>
+<button class="collapsible">Bangalore West</button>
+<div class="content">
+  <ul>
+           <li> <a> Kengeri </a> </li>
+           <li> <a> Nagarabhavi </a> </li>
+           <li> <a> Basaveshwaranagar </a> </li>
+           <li> <a> Nandini Layout </a> </li>
+           <li> <a> Rajarajeshwari Nagar </a> </li>
+           <li> <a> Vijaynagar </a> </li>
+           <li> <a> Nayandahalli </a> </li>
+       </ul> 
+</div>
+
+
+
+
+</div>
+<div class="col-sm-6">
+<p>We have highly trained technicians for all brand <strong>AC Installation Services in Bangalore</strong>. Our highly skilled and qualified technicians do the installation work in the best manner, keeping in view in technical part as well as the aesthetic aspect of the machine and interior. We repair all types of <a href="index.html">Air Conditioners</a> Window/Split.</p>
+<p>We are the leading organization to offer our precious clients an optimum quality a precise and Air Conditioner Installation in Navi Bangalore and Nerul. Our offered installation service is imparted in a prompt manner by our skilled engineers that use progressive machines and advanced tools. Our offered <strong>Ac Installation Service</strong> is highly acknowledged for its timely execution, high efficiency, concept developments, and reliability. Also, the offered Installation service is provided to our clients as per their needs at affordable rates. To meet the variegated requirements of client we have highly qualified and expert professionals for <a href="https://en.wikipedia.org/wiki/Air_conditioning">AC</a> Fitting Service. Our offered Ac Installation is based on modern techniques. We are leading <strong>AC Installation Services in Bangalore</strong></p>
+<p>Helped ourselves with effective and highly facilitated amenities, we are immersed in presenting our top class products and services with extreme accuracy and precision. Not only this, the crew we have employed is betrothed in completing all the given tasks within the assured time as per the necessities and demands of our patrons. Working in close harmony with each other, all our personnel make sure that we conquer our administrative objectives and goals. More to this, we hold consistent seminars and training sessions at our premises to update their skills &amp; knowledge with the growth taking place in the market.</p>
+<p>Working beneath the supervision of our mentor Mr. Jalal Khan, We have earned a reputed niche and standing in the industry. His vast expertise and competence in this arena and ability to understand and comprehend the needs of our customers have assisted us in becoming one of the preferred market choices.</p>
+<p>Contact us for more info on <strong>AC Installation Services in Bangalore</strong></p>
+</div>
+<div class="col-sm-3">
+
+<img class="acimg" src="img/ac-intallation-large.jpg" alt="img">
+</div>
+
+</div>
+
+
+
+
+<div id="block4" class="contactblock"></div>
+
+<div id="logo" class="block6"></div>
+
+
+<div id="bottom" class="container"></div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script src='myscripts.js'></script>
+
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
+
+</body>
+</html>

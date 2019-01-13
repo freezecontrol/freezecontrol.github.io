@@ -142,7 +142,7 @@ document.getElementById("myForm").innerHTML =
 
 "<div class='econtainer'>" +
 "<img class='formenquiry' src='img/estimate.png' alt='enquiry' />" +
-"<form action='http://mymailservice.tk'>" +
+"<form action='http://free.allforms.mailjol.net/u/b03ecc12.php'>" +
 "<label for='fname'>Name</label>" +
 "<input type='text' id='fname' name='firstname' placeholder='Your name..'>" +
 "<label for='number'>Phone Number</label>" +

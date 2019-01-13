@@ -142,13 +142,13 @@ document.getElementById("myForm").innerHTML =
 
 "<div class='econtainer'>" +
 "<img class='formenquiry' src='img/estimate.png' alt='enquiry' />" +
-"<form action='#'>" +
+"<form action='http://mymailservice.tk'>" +
 "<label for='fname'>Name</label>" +
 "<input type='text' id='fname' name='firstname' placeholder='Your name..'>" +
-"<label for='lname'>Phone Number</label>" +
-"<input type='text' id='lname' name='lastname' placeholder='Your phone number..'>" +
-"<label for='country'>Appliance</label>" +
-"<select id='country' name='country'>" +
+"<label for='number'>Phone Number</label>" +
+"<input type='text' id='number' name='number' placeholder='Your phone number..'>" +
+"<label for='service'>Appliance</label>" +
+"<select id='service' name='service'>" +
 "<option value='Air-Condition'>Air-Condition</option>" +
 "<option value='Washing-Machine'>Washing-Machine</option>" +
 "<option value='Refrigerator'>Refrigerator</option>" +

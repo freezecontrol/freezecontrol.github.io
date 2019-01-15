@@ -6,12 +6,14 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
 
 <style>
-
+.header {background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/banner3.png"); min-height:calc(70vh); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow:hidden;}
+@media only screen and (max-width:768px) {
+.header {    background-size: 208% 63%; background-position: -247px 44px; background-repeat: no-repeat; background-color:pink;}
+}
 .fixedenquiry {display:none;}
 .eform {display:block; position:static;}
 .header>img {height:300px; display:block; position:absolute; top:270px; left:30px; -webkit-transition: left 2s; transition: left 2s; transition-delay: 1s;}
 .header>h2 {color: white; text-align: center; font-family: sofia; font-size: 40px; margin-top:160px; text-shadow:2px 2px 5px blue;}
-.header {background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/banner3.png"); min-height:calc(70vh); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow:hidden;}
 
 .contact {background-color:#f2f2f2; overflow:hidden;}
 

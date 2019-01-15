@@ -2,7 +2,10 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 
 /* header */
 .header {background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/banner3.png"); min-height:calc(100vh); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
-
+/* on mobile */
+@media only screen and (max-width:768px) {
+.header {background-size:300% auto;}
+}
 .titlehead {display:block; min-height:100px; width:100%; overflow:hidden; background-color:#1d1d1d;}
 
 /* company logo */

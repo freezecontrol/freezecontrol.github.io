@@ -12,8 +12,9 @@ document.getElementById("titlehead").innerHTML =
 
 "<div class='company'>" +
 "<img class='logo' src='img/logo2.png'>" +
-"<div class='companyname'>Freeze Control</div>" +
-"<div class='companyservice'>Repair & Services</div>" +
+"<div class='companyname xs-hidden'>Freeze Control</div>" +
+"<div class='companyservice xs-hidden'>Repair & Services</div>" +
+"<button class='callbutton xs-visible' type='button'><a href='tel:9845203882'>Call Now</a></button>" +
 "</div>" +
 
 "<div class='menuholder xs-visible'>" +
@@ -105,11 +106,11 @@ document.getElementById("bottom").innerHTML =
 "<div class='col-sm-6'>" +
 "<h2>CONTACT US</h2>" +
 "<p><i class='far fa-address-card'></i> #2, 15th cross, Lakshmipuram, C.M.H. Road, Ulsoor, Bangalore - 560 008</p>" +
-"<p><i class='far fa-envelope'></i> E-Mail : freezecontrol123@gmail.com</p>" +
+"<p><i class='far fa-envelope'></i> E-Mail : <a href='mailto:freezecontrol123@gmail.com'>freezecontrol123@gmail.com</a></p>" +
 "<p><i class='far fa-user-circle'></i> Munawar</p>" +
-"<p><i class='fas fa-phone'></i> Tel : 080 25306882</p>" +
-"<p><i class='fas fa-mobile-alt'></i> Mob : 98452 03882</p>" +
-"<p><i class='fas fa-mobile-alt'></i> Mob : 98443 53711</p>" +
+"<p><i class='fas fa-phone'></i> Tel : <a href='tel:08025306882'>080 25306882</a></p>" +
+"<p><i class='fas fa-mobile-alt'></i> Mob : <a href='tel:9845203882'>98452 03882</a></p>" +
+"<p><i class='fas fa-mobile-alt'></i> Mob : <a href='tel:9844353711'>98443 53711</a></p>" +
 "<p></p>" +
 "</div>" +
 "<div class='col-sm-3'>" +
@@ -170,9 +171,9 @@ document.getElementById("myForm").innerHTML =
 "        <option value='Other'>Other</option>" +
 "    </select>" +
 "</div>" +
-"<div id='wmdrop' class='wmdrop'>" +
-"    <label>Select a brand for Washing-Machine:</label>" +
-"    <select name='Washing-Machine-Brand' form='enqform' id='WashingMachine'>" +
+"<div id='rfdrop' class='rfdrop'>" +
+"    <label>Select a brand for Refrigerator:</label>" +
+"    <select name='Refrigerator-Brand' form='enqform' id='Refrigerator'>" +
 "        <option selected disabled>Select Your Brand</option>" +
 "        <option value='LG'>LG</option>" +
 "        <option value='Samsung'>Samsung</option>" +
@@ -191,9 +192,9 @@ document.getElementById("myForm").innerHTML =
 "        <option value='Other'>Other</option>" +
 "    </select>" +
 "</div>" +
-"<div id='rfdrop' class='rfdrop'>" +
-"    <label>Select a brand for Refrigerator:</label>" +
-"    <select name='Refrigerator-Brand' form='enqform' id='Refrigerator'>" +
+"<div id='wmdrop' class='wmdrop'>" +
+"    <label>Select a brand for Washing-Machine:</label>" +
+"    <select name='Washing-Machine-Brand' form='enqform' id='WashingMachine'>" +
 "        <option selected disabled>Select Your Brand</option>" +
 "        <option value='Ifb'>Ifb</option>" +
 "        <option value='LG'>LG</option>" +

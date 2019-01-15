@@ -13,6 +13,11 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 .logo {height:80px; float:left;}
 .companyname {text-transform:uppercase; color:#418ec7; padding:10px 10px 1px 5px;  font-family:; font-size:26px;}
 .companyservice {color:white;font-family: sofia;}
+.callbutton {float:right; background-color:blue; color:white; border:1px solid blue; display:none; height:30px; width:80px; border-radius:5px; margin-top:20px; margin-right:10px;}
+.callbutton>a {text-decoration:none; color:white;    font-size: 14px;font-weight: 400;}
+@media only screen and (max-width:768px) {
+.callbutton {display:block;	}
+}
 
 /* menu */
 .nav {list-style-type:none; width:520px; float:right; margin:50px 0; }
@@ -33,7 +38,7 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 /* on tablet */
 @media only screen and (max-width:1080px) {
 .nav {width:520px; padding-top:20px; margin:auto; display:block; float:none; overflow:hidden;}
-.company {width:100%; height:80px;}
+.company {width:100%; height:80px; overflow:hidden;}
 }
 
 /* on mobile */

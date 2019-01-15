@@ -13,10 +13,13 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 .logo {height:80px; float:left;}
 .companyname {text-transform:uppercase; color:#418ec7; padding:10px 10px 1px 5px;  font-family:; font-size:26px;}
 .companyservice {color:white;font-family: sofia;}
-.callbutton {float:right; background-color:blue; color:white; border:1px solid blue; display:none; height:30px; width:80px; border-radius:5px; margin-top:20px; margin-right:10px;}
-.callbutton>a {text-decoration:none; color:white;    font-size: 14px;font-weight: 400;}
+
+
+.callbutton {height:40px; width:150px; display:block; float:right; margin-top:-50px;}
+.callbutton>img {height:100%; width:100%; margin:0px; padding:0px; display:block; opacity:0.5;}
+.callbutton>img:hover {opacity:1;}
 @media only screen and (max-width:768px) {
-.callbutton {display:block;	}
+	.callbutton {margin-top:15px;}
 }
 
 /* menu */
@@ -26,7 +29,7 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 .nav>li>a:hover {color:rgba(255,255,255,1);}
 
 /* sub menu */
-.dropdown-content {display:none; position:absolute; width:170px; top:75px;z-index:3; background-color:black;}
+.dropdown-content {display:none; position:absolute; width:170px; top:75px;z-index:3; background-color:#1d1d1d;}
 .dropdown-content>a { text-decoration:none; color:rgba(255,255,255,.75); padding:10px 5px; display:block;}
 .dropdown-content>a:hover {color:rgba(255,255,255,1);}
 
@@ -43,16 +46,16 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 
 /* on mobile */
 @media only screen and (max-width:768px) {
-.company {background-color:black; margin-top:0px; height:80px; overflow:hidden;opacity: 0.5;}
+.company {background-color:#1d1d1d; margin-top:0px; height:80px; overflow:hidden;opacity: 1;}
 
-.nav {padding-top:0px; padding-left:0px; background-color:black; width:100%; z-index:10;}
+.nav {padding-top:0px; padding-left:0px; background-color:#1d1d1d; width:100%; z-index:10;}
 .nav>li {float:none; margin:20px;}
 .nav>ul>li {float:none;}
 .dropdown-content {margin-left:50px; position:initial;}
 }
 
 /* menubar */
-.menuholder {width:100%; height:40px; background-color:black; overflow:hidden;opacity: 0.5;}
+.menuholder {width:100%; height:40px; background-color:#1d1d1d; overflow:hidden;opacity: 1;}
 .menu, .menuon{height:20px;width:50px; float:right; margin-top:5px;}
 .linebar {border-radius: 2px;height:4px;width:40px;background-color:#ee6e12;}
 .linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
@@ -76,12 +79,13 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 
 
 
-.contactblock {background-color:#1e90c8; color:white;min-height:150px; width:100%; box-sizing:border-box; border:50px solid #1e90c8;}
+.contactblock {background-color:#1e90c8; text-align:center; color:white;min-height:150px; width:100%; box-sizing:border-box; border:50px solid #1e90c8;}
 .contactblock>p {display: inline-block; font-family: 'Open Sans', sans-serif; margin: 0 auto; font-size: 18px; font-weight: normal; color: #fff; text-align: center; width:80%; }
 .contactblock>a {display: block; background: #fff; font-family: 'Oswald-Regular'; margin: 0 auto;font-size: 18px; font-weight: normal; color: #0fbbef;text-align: center; float: right; border: 1px solid #ccc; border-radius: 10px; text-transform: uppercase;}
 .contactblock>a:hover {-webkit-transition: all 0.5s ease; background: #024f9f; color: #fff;}
-
-
+@media only screen and (max-width:768px) {
+.contactblock>a {width:80%; float:none; margin-top:20px;}
+}
 
 .fixedenquiry {position:fixed; left:-55px; top:50%; height:40px; width:120px; background-color:blue; color:white; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); text-align:center; border-radius:10px; padding-top:5px; z-index:50; cursor:pointer;}
 .bottom {background-color:#1d1d1d; color:white; min-height:300px; margin-top:50px; box-sizing:border-box; border-style:solid; border-width:10px 50px; border-color:#1d1d1d; overflow:hidden;}

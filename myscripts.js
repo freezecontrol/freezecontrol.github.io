@@ -14,7 +14,7 @@ document.getElementById("titlehead").innerHTML =
 "<img class='logo' src='img/logo2.png'>" +
 "<div class='companyname xs-hidden'>Freeze Control</div>" +
 "<div class='companyservice xs-hidden'>Repair & Services</div>" +
-"<button class='callbutton xs-visible' type='button'><a href='tel:9845203882'>Call Now</a></button>" +
+"<a class='callbutton xs-visible' href='tel:9845203882'><img src='img/callus.png'></a>" +
 "</div>" +
 
 "<div class='menuholder xs-visible'>" +

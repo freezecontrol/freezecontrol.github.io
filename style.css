@@ -37,7 +37,7 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 @media only screen and (max-width:768px) {
 .company {background-color:black; margin-top:0px; height:80px; overflow:hidden;opacity: 0.5;}
 
-.nav {padding-top:0px; padding-left:0px; background-color:black; width:100%;}
+.nav {padding-top:0px; padding-left:0px; background-color:black; width:100%; z-index:10;}
 .nav>li {float:none; margin:20px;}
 .nav>ul>li {float:none;}
 .dropdown-content {margin-left:50px; position:initial;}
@@ -75,7 +75,7 @@ body {margin:0; display:block; font-weight: 700;font: 300 normal 15px/1.4 Ralewa
 
 
 
-.fixedenquiry {position:fixed; left:-55px; top:50%; height:40px; width:120px; background-color:blue; color:white; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); text-align:center; border-radius:10px; padding-top:5px; z-index:50;}
+.fixedenquiry {position:fixed; left:-55px; top:50%; height:40px; width:120px; background-color:blue; color:white; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); text-align:center; border-radius:10px; padding-top:5px; z-index:50; cursor:pointer;}
 .bottom {background-color:#1d1d1d; color:white; min-height:300px; margin-top:50px; box-sizing:border-box; border-style:solid; border-width:10px 50px; border-color:#1d1d1d; overflow:hidden;}
 .bottom .social { letter-spacing:5px; font-size:20px;}
 .bottom iframe {height:200px; width:100%;}
@@ -95,6 +95,9 @@ to {margin-left:calc(278px * -13);}
 }
 .slide:hover {animation-play-state: paused;}
 
+.acdrop, .wmdrop, .rfdrop {
+    display:none;
+}
 
 .eform {width:90%; max-width:500px; overflow:hidden; position:fixed; z-index:100;box-sizing: border-box; top:20px; left:calc(50% - 250px);display: none;}
 .econtainer input[type=text], .econtainer  select, .econtainer  textarea {width: 100%;padding: 4px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 2px; margin-bottom: 8px; resize: vertical;}
@@ -103,7 +106,7 @@ to {margin-left:calc(278px * -13);}
 .econtainer { border-radius: 5px; background-color: #f2f2f2; padding: 20px;}
 .econtainer button {background-color: #4CAF50;color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;}
 .econtainer button:hover {background-color: #45a049;}
-.formenquiry {width:200px; margin:auto;display:block;}
+.formenquiry {height:calc(100vh - 500px); margin:auto;display:block;}
 /* on mobile */
 @media only screen and (max-width:768px) {
 .eform {left:5%;}

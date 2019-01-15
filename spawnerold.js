@@ -16,7 +16,7 @@ document.getElementById("titlehead").innerHTML =
 
 "<div class='company'>" +
 "<img class='logo' src='img/logo2.png'>" +
-"<div class='companyname'>FreezeControl</div>" +
+"<div class='companyname'>Freeze Control</div>" +
 "<div class='companyservice'>Repair & Services</div>" +
 "</div>" +
 
@@ -61,7 +61,7 @@ document.getElementById("titlehead").innerHTML =
 
 
 document.getElementById("block4").innerHTML =
-"<p class='col-sm-6'>Freezecontrol Refrigeration And Air conditioning is provides a quality repair and installation services in  Bangalore with special offers.</p>" +
+"<p class='col-sm-6'>Freeze Control Refrigeration And Air conditioning is provides a quality repair and installation services in  Bangalore with special offers.</p>" +
 "<a href='contact.html' class='col-sm-2'>Contact us</a>" ;
 
 
@@ -112,7 +112,7 @@ document.getElementById("bottom").innerHTML =
 "<p><i class='far fa-envelope'></i> E-Mail : freezecontrol123@gmail.com</p>" +
 "<p><i class='far fa-user-circle'></i> Munawar</p>" +
 "<p><i class='fas fa-phone'></i> Tel : 080 25306882</p>" +
-"<p><i class='fab fa-whatsapp'></i> Mob : 98452 03882</p>" +
+"<p><i class='fas fa-mobile-alt'></i> Mob : 98452 03882</p>" +
 "<p><i class='fas fa-mobile-alt'></i> Mob : 98443 53711</p>" +
 "<p></p>" +
 "</div>" +
@@ -140,24 +140,85 @@ document.getElementById("bottom").innerHTML =
 
 document.getElementById("myForm").innerHTML = 
 
-"<div class='econtainer'>" +
 "<img class='formenquiry' src='img/estimate.png' alt='enquiry' />" +
-"<form action='http://free.allforms.mailjol.net/u/b03ecc12.php'>" +
+"<form id='enqform' action='http://free.allforms.mailjol.net/u/b03ecc12.php'>" +
 "<label for='fname'>Name</label>" +
 "<input type='text' id='fname' name='firstname' placeholder='Your name..'>" +
 "<label for='number'>Phone Number</label>" +
 "<input type='text' id='number' name='number' placeholder='Your phone number..'>" +
 "<label for='service'>Appliance</label>" +
 "<select id='service' name='service'>" +
+"<option selected disabled>select</option>" +
 "<option value='Air-Condition'>Air-Condition</option>" +
 "<option value='Washing-Machine'>Washing-Machine</option>" +
 "<option value='Refrigerator'>Refrigerator</option>" +
 "</select>" +
+"<div class='acdrop'>" +
+"    <label>Select a brand for AC:</label>" +
+"    <select name='acBrand' form='enqform' id='AirCondition'>" +
+"        <option selected disabled>Select Your Brand</option>" +
+"        <option value='Blue star'>Blue star</option>" +
+"        <option value='Daikin'>Daikin</option>" +
+"        <option value='Samsung'>Samsung</option>" +
+"        <option value='LG'>LG</option>" +
+"        <option value='Godrej'>Godrej</option>" +
+"        <option value='Onida'>Onida</option>" +
+"        <option value='Lloyd'>Lloyd</option>" +
+"        <option value='Carrier'>Carrier</option>" +
+"        <option value='Hitachi'>Hitachi</option>" +
+"        <option value='Mitsubishi electronics'>Mitsubishi electronics</option>" +
+"        <option value='O General'>O General</option>" +
+"        <option value='Panasonic'>Panasonic</option>" +
+"        <option value='Whirlpool'>Whirlpool</option>" +
+"        <option value='Voltas'>Voltas</option>" +
+"        <option value='Other'>Other</option>" +
+"    </select>" +
+"</div>" +
+"<div class='wmdrop'>" +
+"    <label>Select a brand for Washing-Machine:</label>" +
+"    <select name='washingMachineBrand' form='enqform' id='WashingMachine'>" +
+"        <option selected disabled>Select Your Brand</option>" +
+"        <option value='LG'>LG</option>" +
+"        <option value='Samsung'>Samsung</option>" +
+"        <option value='Whirlpool'>Whirlpool</option>" +
+"        <option value='Panasonic'>Panasonic</option>" +
+"        <option value='Godrej'>Godrej</option>" +
+"        <option value='Blue star'>Blue star</option>" +
+"        <option value='Videocon'>Videocon</option>" +
+"        <option value='Bpl'>Bpl</option>" +
+"        <option value='Sanyo'>Sanyo</option>" +
+"        <option value='Voltas'>Voltas</option>" +
+"        <option value='Daewoo'>Daewoo</option>" +
+"        <option value='Hitachi'>Hitachi</option>" +
+"        <option value='General electric'>General electric</option>" +
+"        <option value='white seating house'>white seating house</option>" +
+"        <option value='Other'>Other</option>" +
+"    </select>" +
+"</div>" +
+"<div class='rfdrop'>" +
+"    <label>Select a brand for Refrigerator:</label>" +
+"    <select name='refrigeratorBrand' form='enqform' id='Refrigerator'>" +
+"        <option selected disabled>Select Your Brand</option>" +
+"        <option value='Ifb'>Ifb</option>" +
+"        <option value='LG'>LG</option>" +
+"        <option value='Samsung'>Samsung</option>" +
+"        <option value='godrej'>godrej</option>" +
+"        <option value='Onida'>Onida</option>" +
+"        <option value='Videocon'>Videocon</option>" +
+"        <option value='Voltas'>Voltas</option>" +
+"        <option value='Panasonic'>Panasonic</option>" +
+"        <option value='Bosch'>Bosch</option>" +
+"        <option value='Whirlpool'>Whirlpool</option>" +
+"        <option value='Hitachi'>Hitachi</option>" +
+"        <option value='Bpl'>Bpl</option>" +
+"        <option value='Other'>Other</option>" +
+"    </select>" +
+"</div>" +
 "<label for='subject'>Subject</label>" +
 "<textarea id='subject' name='subject' placeholder='Service Required..' style='height:100px'></textarea>" +
 "<button type='button' onclick='closeForm()'>Close</button>" +
 "<input type='submit' value='Submit'>" +
-"</form>" +
-"</div>" ;
+"</form>" ;
+
 
 }
